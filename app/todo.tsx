@@ -65,7 +65,7 @@ export const Todo = () => {
             {todos.map((todo, index) => (
               <motion.li
                 key={todo.index}
-                className={`flex items-center justify-between px-6 py-4 text-lg border-b ${todo.completed ? "line-through text-gray-500" : ""}`}
+                className={`flex items-center justify-between px-6 py-4 text-lg border-b`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -74,6 +74,7 @@ export const Todo = () => {
                   isSelected={todo.completed}
                   onValueChange={() => toggleTodo(index)}
                   size="lg"
+                  lineThrough
                 >
                   {todo.text}
                 </Checkbox>
