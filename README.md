@@ -2,8 +2,6 @@
 
 预览地址：https://interview-beta.vercel.app/
 
-这是一个 [Next.js](https://nextjs.org/) 项目。
-
 ## 快速开始
 
 ### 先决条件
